@@ -1,0 +1,38 @@
+@import "../base/variables";
+
+.example {
+  height: 85vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  &_first {
+    background-image: url("../img/example/example_bg_rh.jpg");
+  }
+  &_second {
+    background-image: url("../img/example/example_bg_ms.jpg");
+  }
+  &_third {
+    background-image: url("../img/example/example_bg_ss.jpg");
+    .example__text {
+      margin-right: 0;
+      margin-left: 75px;
+    }
+  }
+}
+
+.example__text {
+  max-width: 285px;
+  margin-right: 75px;
+}
+
+.example__title {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #403E3B;
+}
+
+.example__subtitle {
+  color: $brown_text;
+}

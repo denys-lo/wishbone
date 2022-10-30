@@ -1,0 +1,9 @@
+@import "../base/variables";
+
+.quote {
+  padding: 100px 0;
+  .container {
+    max-width: $container-quote;
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../base/variables";
+
+.contact {
+  padding: 100px 0;
+  background-color: #CEC4BC;
+  .container {
+    align-items: center;
+  }
+}
+
+.contact__text {
+  max-width: 576px;
+}
+
+.contact__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $brown-text;
+}
+
+.contact__title {
+  font-size: 40px;
+}

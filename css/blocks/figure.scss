@@ -1,0 +1,10 @@
+.figure {
+  max-width: 493px;
+}
+
+.figure__text {
+  margin-bottom: 10px;
+  &:last-of-type {
+    margin-bottom: 18px;
+  }
+}

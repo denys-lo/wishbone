@@ -1,0 +1,25 @@
+@import "../base/variables";
+
+.figcaption {
+  display: flex;
+  align-items: center;
+}
+
+.figcaption__img {
+  width: 84px;
+  height: 84px;
+  margin-right: 30px;
+  img {
+    width: 100%;
+  }
+}
+
+.figcaption__text {
+  font-size: 17px;
+  line-height: 17px;
+  cite {
+    font-size: 14px;
+    line-height: 14px;
+    color: $brown-text;
+  }
+}

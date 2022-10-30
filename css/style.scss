@@ -1,0 +1,20 @@
+// Base
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/reset";
+@import "./base/base";
+// Block
+@import "./blocks/header"; // header
+@import "./blocks/logo";
+@import "./blocks/nav";
+@import "./blocks/intro"; // intro
+@import "./blocks/info";
+@import "./blocks/quote"; // quote
+@import "./blocks/figure";
+@import "./blocks/figcaption";
+@import "./blocks/example"; //example
+@import "./blocks/processes"; //processes
+@import "./blocks/item";
+@import "./blocks/contact"; //contact
+@import "./blocks/footer"; //footer
+@import "./blocks/social";

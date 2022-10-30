@@ -1,0 +1,29 @@
+@import "../base/variables";
+
+nav {
+  ul {
+    align-items: center;
+    li {
+      margin-right: 32px;
+      &:nth-child(5) {
+        margin-right: 31px;
+      }
+      &:last-of-type {
+        margin-right: 20px;
+        transition: 0.3s;
+        a {
+          color: #FFFFFF;
+          background-color: $black;
+          border-radius: 14px;
+          padding: 11px 20px;
+          &:hover {
+            background-color: $brown-text;
+          }
+          &:focus {
+            background-color: #493421;
+          }
+        }
+      }
+    }
+  }
+}

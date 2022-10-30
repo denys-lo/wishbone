@@ -1,0 +1,21 @@
+@import "../base/variables";
+
+footer {
+  padding: 60px 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: $brown_text;
+}
+.footer__logo {
+  margin-bottom: 20px;
+  width: 256px;
+  height: 22px;
+  a {
+    img {
+      width: 100%;
+    }
+  }
+  .d-flex {
+    align-items: center;
+  }
+}

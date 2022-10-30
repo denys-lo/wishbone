@@ -1,0 +1,27 @@
+@import "../base/variables";
+
+.info {
+  width: 50%;
+  padding-top: 90px;
+}
+
+.info__name {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #645C55;
+}
+
+.info__title {
+  margin-bottom: 18px
+}
+
+.info__text {
+  color: #403E3B;
+  margin-bottom: 41px;
+  max-width: 509px;
+}
+
+.info__link {
+  margin-left: 25px;
+}
