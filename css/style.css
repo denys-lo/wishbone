@@ -52,6 +52,14 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/Poppins-Regular.eot");
+  src: url("../../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Poppins-Regular.woff2") format("woff2"), url("../../fonts/Poppins-Regular.woff") format("woff"), url("../../fonts/Poppins-Regular.ttf") format("truetype"), url("../../fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   font: 16px/24px "Poppins", sans-serif;
   color: #1B1A1A;
@@ -196,6 +204,13 @@ nav ul li:last-of-type a:focus {
 
 .info__link {
   margin-left: 25px;
+  display: inline-flex;
+}
+.info__link::after {
+  font-family: "Font Awesome 6 Brands", serif;
+  content: "\f4d5";
+  display: inline-block;
+  margin-left: 5px;
 }
 
 .quote {
@@ -257,6 +272,7 @@ nav ul li:last-of-type a:focus {
 }
 .example_third {
   background-image: url("../img/example/example_bg_ss.jpg");
+  justify-content: flex-start;
 }
 .example_third .example__text {
   margin-right: 0;

@@ -24,4 +24,11 @@
 
 .info__link {
   margin-left: 25px;
+  display: inline-flex;
+  &::after {
+    font-family: "Font Awesome 6 Brands", serif;
+    content: "\f4d5";
+    display: inline-block;
+    margin-left: 5px;
+  }
 }

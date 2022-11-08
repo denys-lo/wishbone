@@ -15,6 +15,7 @@
   }
   &_third {
     background-image: url("../img/example/example_bg_ss.jpg");
+    justify-content: flex-start;
     .example__text {
       margin-right: 0;
       margin-left: 75px;
