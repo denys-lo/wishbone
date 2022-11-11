@@ -1,0 +1,43 @@
+@import "../base/variables";
+
+.customers {
+  background-color: #403E3B;
+  padding: 100px 15px;
+}
+
+.customers__info {
+  max-width: 450px;
+}
+
+.customers__subtitle {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ECE7E4;
+}
+
+.customers__title {
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+.customers__text {
+  color: #ECE7E4;
+  margin-bottom: 75-48px;
+}
+
+.customers_logos {
+  max-width: 448px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: center;
+}
+
+.customers_logo {
+  max-width: 128px;
+  margin-right: 96px;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
