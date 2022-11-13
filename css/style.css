@@ -97,7 +97,7 @@ a:hover {
   transform: scale(1.1);
 }
 a:focus {
-  color: #645C55;
+  color: #493421;
 }
 
 .container {
@@ -250,7 +250,7 @@ nav ul li:last-of-type a:focus {
   font-size: 17px;
   line-height: 17px;
 }
-.figcaption__text cite {
+.figcaption__text span {
   font-size: 14px;
   line-height: 14px;
   color: #645C55;
@@ -368,6 +368,7 @@ footer {
   font-size: 14px;
   line-height: 14px;
   color: #645C55;
+  background-color: #F7F7F7;
 }
 
 .footer__logo {
@@ -425,6 +426,88 @@ footer {
 .customers_logo img {
   display: block;
   width: 100%;
+}
+
+.projects {
+  padding: 112px 15px;
+  background-color: #F7F7F7;
+}
+
+.projects__title {
+  margin-bottom: 15px;
+}
+
+.projects__subtitle {
+  max-width: 581px;
+  color: #645C55;
+  margin-bottom: 44px;
+}
+
+.preview {
+  max-width: 375px;
+  position: relative;
+}
+.preview img {
+  display: block;
+  width: 100%;
+}
+
+.preview__info {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.preview__subtitle {
+  color: #645C55;
+}
+
+.preview__title {
+  font-size: 23px;
+  color: #403E3B;
+}
+
+.preview__button {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  background-color: #1B1A1A;
+  border-radius: 14px;
+  padding: 11px 20px;
+}
+
+.team {
+  padding: 96px 15px 128px 15px;
+}
+.team .container.d-flex {
+  justify-content: flex-start;
+}
+
+.team__info {
+  max-width: 358px;
+  margin-right: 37px;
+  padding-bottom: 179px;
+}
+
+.team__title {
+  margin-bottom: 14px;
+  color: #403E3B;
+}
+
+.team__text {
+  margin-bottom: 41px;
+  color: #645C55;
+}
+
+.team__link {
+  margin-left: 25px;
+}
+
+.team__preview {
+  flex-wrap: wrap;
+  max-width: 628px;
 }
 
 /*# sourceMappingURL=style.css.map */

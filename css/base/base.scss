@@ -16,7 +16,7 @@
 body {
   font: $p-font;
   color: $black;
-  background-color: #FFFFFF;
+  background-color: $white;
   background-position: center;
 }
 
@@ -51,7 +51,7 @@ a {
   }
 
   &:focus {
-    color: $brown-text;
+    color: $focus;
   }
 
 }

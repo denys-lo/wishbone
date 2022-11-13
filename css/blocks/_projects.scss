@@ -1,0 +1,16 @@
+@import "../base/variables";
+
+.projects {
+  padding: 112px 15px;
+  background-color: $bg-white;
+}
+
+.projects__title {
+  margin-bottom: 15px;
+}
+
+.projects__subtitle {
+  max-width: 581px;
+  color: $brown-text;
+  margin-bottom: 44px;
+}

@@ -1,0 +1,35 @@
+@import "../base/variables";
+
+.preview {
+  max-width: 375px;
+  position: relative;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.preview__info {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.preview__subtitle {
+  color: $brown-text;
+}
+.preview__title {
+  font-size: 23px;
+  color: $brown-title;
+}
+
+.preview__button {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  letter-spacing: 0.4px;
+  color: $white;
+  background-color: $black;
+  border-radius: 14px;
+  padding: 11px 20px;
+}

@@ -4,7 +4,7 @@ header {
   position: fixed;
   z-index: 1;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: $white;
   padding: 22px 0;
   .container {
     max-width: $container_nav;

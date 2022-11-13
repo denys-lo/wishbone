@@ -1,0 +1,33 @@
+@import "../base/variables";
+
+.team {
+  padding: 96px 15px 128px 15px;
+  .container.d-flex {
+    justify-content: flex-start;
+  }
+}
+
+.team__info {
+  max-width: 358px;
+  margin-right: 37px;
+  padding-bottom: 179px;
+}
+
+.team__title {
+  margin-bottom: 14px;
+  color: $brown-title;
+}
+
+.team__text {
+  margin-bottom: 41px;
+  color: $brown-text;
+}
+
+.team__link {
+  margin-left: 25px;
+}
+
+.team__preview {
+  flex-wrap: wrap;
+  max-width: 628px;
+}
