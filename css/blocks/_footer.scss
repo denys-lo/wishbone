@@ -1,22 +1,44 @@
 @import "../base/variables";
+@import "../base/mixins";
 
 footer {
-  padding: 60px 0;
+  padding: 60px 15px;
   font-size: 14px;
   line-height: 14px;
   color: $brown_text;
   background-color: $bg-white;
+  @include max-screen(768px) {
+    text-align: center;
+  }
+  @include max-screen(428px) {
+    padding: 50px 15px;
+  }
 }
+
+.footer__licence_social {
+  align-items: center;
+  @include max-screen(768px) {
+    flex-direction: column;
+  }
+}
+
+.footer__licence {
+  @include max-screen(768px) {
+    margin-bottom: 20px;
+  }
+}
+
 .footer__logo {
   margin-bottom: 20px;
   width: 256px;
   height: 22px;
+  @include max-screen(768px) {
+    text-align: center;
+    width: 100%;
+  }
   a {
     img {
       width: 100%;
     }
-  }
-  .d-flex {
-    align-items: center;
   }
 }

@@ -1,8 +1,12 @@
 @import "../base/variables";
+@import "../base/mixins";
 
 .figcaption {
   display: flex;
   align-items: center;
+  @include max-screen(768px) {
+    justify-content: center;
+  }
 }
 
 .figcaption__img {

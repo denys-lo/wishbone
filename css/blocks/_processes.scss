@@ -1,8 +1,12 @@
 @import "../base/variables";
+@import "../base/mixins";
 
 .processes {
   .container {
-    padding: 100px 0;
+    padding: 100px 15px;
+    @include max-screen(768px) {
+      padding: 50px 15px;
+    }
   }
 }
 
@@ -20,4 +24,8 @@
 
 .processes__articles {
   text-align: center;
+  @include max-screen(768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }

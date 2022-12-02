@@ -1,4 +1,5 @@
 @import "../base/variables";
+@import "../base/mixins";
 
 .example {
   height: 85vh;
@@ -7,6 +8,13 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @include max-screen(884px) {
+    height: 40vh;
+  }
+  @include max-screen(768px) {
+    text-align: center;
+    justify-content: center;
+  }
   &_first {
     background-image: url("../img/example/example_bg_rh.jpg");
   }
@@ -16,9 +24,15 @@
   &_third {
     background-image: url("../img/example/example_bg_ss.jpg");
     justify-content: flex-start;
+    @include max-screen(768px) {
+      justify-content: center;
+    }
     .example__text {
       margin-right: 0;
       margin-left: 75px;
+      @include max-screen(768px) {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -26,6 +40,9 @@
 .example__text {
   max-width: 285px;
   margin-right: 75px;
+  @include max-screen(768px) {
+    margin-right: 0;
+  }
 }
 
 .example__title {

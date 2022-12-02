@@ -1,12 +1,26 @@
 @import "../base/variables";
+@import "../base/mixins";
 
 .customers {
   background-color: $bg-customers;
   padding: 100px 15px;
+  .container {
+    @include max-screen(992px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  @include max-screen(768px) {
+    padding: 50px 15px;
+  }
 }
 
 .customers__info {
   max-width: 450px;
+  @include max-screen(992px) {
+    max-width: 750px;
+  }
 }
 
 .customers__subtitle {
@@ -30,11 +44,19 @@
   flex-wrap: wrap;
   align-content: space-between;
   align-items: center;
+  @include max-screen(992px) {
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 
 .customers_logo {
   max-width: 128px;
   margin-right: 96px;
+  @include max-screen(992px) {
+    margin-right: 0;
+  }
   img {
     display: block;
     width: 100%;

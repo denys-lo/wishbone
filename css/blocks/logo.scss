@@ -1,12 +1,11 @@
 .logo {
   margin-left: 32px;
-  width: 220px;
-}
-
-.logo__link {
-
+  @include max-screen(768px) {
+    margin-left: 15px;
+  }
 }
 
 .logo__img {
-  width: 100%;
+  display: block;
+  max-width: 220px;
 }

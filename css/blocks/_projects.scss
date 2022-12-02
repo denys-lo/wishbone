@@ -1,16 +1,29 @@
 @import "../base/variables";
+@import "../base/mixins";
 
 .projects {
   padding: 112px 15px;
   background-color: $bg-white;
+  @include max-screen(768px) {
+    padding: 50px 15px;
+  }
 }
 
 .projects__title {
   margin-bottom: 15px;
+  @include max-screen(768px) {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .projects__subtitle {
   max-width: 581px;
   color: $brown-text;
   margin-bottom: 44px;
+  @include max-screen(768px) {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
 }

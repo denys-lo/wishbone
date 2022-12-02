@@ -1,9 +1,18 @@
 @import "../base/variables";
+@import "../base/mixins";
 
 .team {
   padding: 96px 15px 128px 15px;
+  @include max-screen(768px) {
+    padding: 50px 15px;
+  }
   .container.d-flex {
     justify-content: flex-start;
+    @include max-screen(992px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
   }
 }
 
@@ -11,23 +20,46 @@
   max-width: 358px;
   margin-right: 37px;
   padding-bottom: 179px;
+  @include max-screen(992px) {
+    max-width: 750px;
+    padding-bottom: 15px;
+    margin-right: 0;
+    text-align: center;
+  }
 }
 
 .team__title {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   color: $brown-title;
 }
 
 .team__text {
   margin-bottom: 41px;
   color: $brown-text;
+  @include max-screen(992px) {
+    margin-bottom: 15px;
+  }
 }
 
 .team__link {
   margin-left: 25px;
+  @include max-screen(992px) {
+    margin-left: 0;
+  }
 }
 
 .team__preview {
+  margin-top: 10px;
+  align-items: flex-start;
   flex-wrap: wrap;
   max-width: 628px;
+  @include max-screen(992px) {
+    max-width: 628px;
+    justify-content: space-between;
+  }
+  .figcaption {
+    @include max-screen(992px) {
+      padding: 15px;
+    }
+  }
 }

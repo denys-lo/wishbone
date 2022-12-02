@@ -1,8 +1,18 @@
 @import "../base/variables";
+@import "../base/mixins";
 
 .info {
   width: 50%;
-  padding-top: 90px;
+  padding: 90px 15px 0 15px;
+  z-index: 2;
+  @include max-screen(884px) {
+    padding-top: 63px;
+  }
+  @include max-screen(835px) {
+    width: 100%;
+    text-align: center;
+    padding: 63px 0 0 0;
+  }
 }
 
 .info__name {
@@ -10,16 +20,51 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #645C55;
+  @include max-screen(835px) {
+    background: rgba(206,196,188, .7);
+    padding: 5px;
+  }
+  @include max-screen(376px) {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .info__title {
-  margin-bottom: 18px
+  margin-bottom: 18px;
+  @include max-screen(884px) {
+    font-size: 52px;
+    line-height: 58px;
+  }
+  @include max-screen(835px) {
+    background: rgba(206,196,188, .4);
+    padding: 5px;
+  }
+  @include max-screen(376px) {
+    margin-bottom: 10px;
+    font-size: 34px;
+    line-height: 40px;
+  }
 }
 
 .info__text {
   color: #403E3B;
   margin-bottom: 41px;
   max-width: 509px;
+  @include max-screen(835px) {
+    background: rgba(206,196,188, .7);
+    max-width: 100%;
+    padding: 5px 100px;
+  }
+  @include max-screen(768px) {
+    padding: 5px 15px;
+  }
+  @include max-screen(376px) {
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .info__link {
@@ -30,5 +75,16 @@
     content: "\f4d5";
     display: inline-block;
     margin-left: 5px;
+  }
+  @include max-screen(835px) {
+    margin-left: 0;
+    font-size: 18px;
+    color: $white;
+    background-color: $black;
+    border-radius: 14px;
+    padding: 11px 20px;
+  }
+  @include max-screen(376px) {
+    font-size: 14px;
   }
 }

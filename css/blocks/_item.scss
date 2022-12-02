@@ -1,7 +1,12 @@
 @import "../base/variables";
+@import "../base/mixins";
 
 .item {
   max-width: 280px;
+  @include max-screen(768px) {
+    max-width: 480px;
+    margin-bottom: 15px
+  }
 }
 
 .item__img {
@@ -23,4 +28,7 @@
   font-size: 15px;
   line-height: 24px;
   color: $brown_text;
+  @include max-screen(884px) {
+    padding: 0 15px;
+  }
 }
